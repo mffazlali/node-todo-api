@@ -1,6 +1,3 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-
 // 35-mongoose-install-introduction__videoroxo
 var { mongodb } = require('./db/mongoose');
 
@@ -33,7 +30,8 @@ otherTodo.save().then((doc) => {
 
 
 var newUser = new User({
-    email: "info@tata.ir"
+    email: "info@tata.ir",
+    password: "Mohammad"
 });
 
 newUser.save().then((doc) => {
